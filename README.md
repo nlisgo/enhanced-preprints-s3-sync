@@ -48,7 +48,7 @@ In order to verify that the data folder is the same as what we currently have in
 
 For example (no output indicates the folders match):
 ```
-diff -r -r ./data ../enhanced-preprints-data/data
+diff -r -w ./data ../enhanced-preprints-data/data
 ```
 
 ## Process other meca
