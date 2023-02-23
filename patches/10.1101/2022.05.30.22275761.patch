@@ -1,0 +1,24 @@
+---
++++
+@@ -28,6 +28,7 @@
+ <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6973-5385</contrib-id>
+ <name><surname>Kankaanp&#x00E4;&#x00E4;</surname><given-names>Anna</given-names></name>
+ <degrees>MSc</degrees>
++<xref ref-type="aff" rid="a1">1</xref>
+ <xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+ </contrib>
+ <contrib contrib-type="author">
+@@ -283,13 +284,6 @@
+ <p>Our study has the following major strengths. Adolescent lifestyle-related patterns were identified using population-based large cohort data (N&#x223C;5000), with longitudinal measurements of lifestyle-related factors assessed using validated questionnaires. Moreover, adolescent lifestyle behavior patterns were identified using data-driven LCA. This approach enabled us to use all available data on adolescent lifestyle-related behaviors and to identify the patterns without using artificial cut-off points for the variables. The reciprocal associations between different lifestyle-related factors, as well as their joint association with biological aging, are complex, and individual associations are difficult to interpret. However, our approach produced results with easy interpretation. The data were prospective, and biological aging was assessed with novel epigenetic aging measures, including a recently published DunedinPACE estimator. Furthermore, for the first time, we could evaluate the proportions of genetic and environmental influences underlying adolescent lifestyle as a whole in relation to biological aging by using quantitative genetic modelling. However, our study also has some limitations. Adolescent lifestyle-related behaviors were self-reported and, therefore, might be susceptible to recall bias and bias through social desirability.</p>
+ <p>In conclusion, later biological aging reflects adolescent lifestyle behavior. Our findings advance research on biological aging by showing that a shared genetic background can underlie both adolescent lifestyle and biological aging measured with epigenetic clocks.</p>
+ </sec>
+-<sec sec-type="supplementary-material">
+-<title>Supporting information</title>
+-<supplementary-material>
+-<label>Supplementary material</label>
+-<media xlink:href="supplements/275761_file03.docx" />
+-</supplementary-material>
+-</sec>
+ </body>
+ <back>
+ <sec sec-type="data-availability">

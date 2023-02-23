@@ -34,7 +34,15 @@ When pdf available deposit in `s3://elife-epp-data/pdf/[doi-prefix]/[doi-suffix]
 
 The `biorxiv_fetch_meca_archives.sh` will fetch all the manuscript dois listed in `./biorxiv-mecas.txt` file. Add additonal biorxiv manuscripts by extending the doi's in that list.
 
-The `./scripts/biorxiv_extract_mecas.sh` script extracts the meca file and prepares a temp folder with the manuscript xml. If a patch is found with the same doi as the manuscript being processed in the `patches/` folder, the patch will be applied. Some modifications are made to the xml and the tif and gif files are prepared. Then the pdf files are searched for in the `enhanced-preprints-data` github repo and downloaded if found to the temp folder. The prepared folder is then moved to the output dir as specified when the script is called.
+The `./scripts/biorxiv_extract_mecas.sh` script extracts the meca file and prepares a temp folder with the manuscript xml. If a patch is found with the same doi as the manuscript being processed in the `patches/` folder, the patch will be applied. Some modifications are made to the xml and the tif and gif files are prepared. Then the pdf files are searched for in the `s3://elife-epp-data/pdf` folder and downloaded if found to the temp folder. The prepared folder is then moved to the output dir as specified when the script is called.
+
+### Check against enhanced-preprints-data prior to migration
+
+Before running `./scripts/biorxiv_extract_mecas.sh` ensure we can access the pdf files currently stored in `enhanced-preprints-data`.
+
+```
+./scripts/s3-sync-data.sh [local path to enhanced-preprints-data]/data s3://elife-epp-data/pdf "*.pdf"
+```
 
 In order to verify that the data folder is the same as what we currently have in `enhanced-preprints-data`, clone that repo locally and perform a diff on the prepared data folder from running the above scripts with the files pulled down from `enhanced-preprints-data` git repo.
 
@@ -50,14 +58,12 @@ diff -r -r ./data ../enhanced-preprints-data/data
 ./scripts/other_extract_mecas.sh other-mecas/ data/
 ```
 
+The `other_fetch_meca_archives.sh` will fetch all the meca files listed in `./biorxiv-mecas.txt` file from the s3 bucket. Add additonal manuscripts by extending the list and posting the meca file in `s3://elife-epp-data/meca`.
+
+The `./scripts/other_extract_mecas.sh` script extracts the meca file and prepares a temp folder with the manuscript xml. The tif and gif files are prepared. Then the pdf files are searched for in the `s3://elife-epp-data/pdf` folder and downloaded if found to the temp folder. The prepared folder is then moved to the output dir as specified when the script is called.
+
 ## Sync data folder to s3
 
 ```
 ./scripts/s3-sync-data.sh data/ s3://elife-epp-data/data
-```
-
-## Sync data folder to s3 (enhanced-preprints-data pdf only)
-
-```
-./scripts/s3-sync-data.sh [local path to enhanced-preprints-data]/data s3://elife-epp-data/pdf "*.pdf"
 ```

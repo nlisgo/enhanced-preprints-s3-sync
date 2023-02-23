@@ -1,0 +1,13 @@
+---
++++
+@@ -80,8 +80,8 @@
+ <xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+ <xref ref-type="author-notes" rid="n2">8</xref>
+ </contrib>
+-<aff id="a1"><label>1</label><institution>Laboratory of Metabolic Signaling, Institute of Bioengineering</institution>, Ecole Polytechnique F&#x00E9;d&#x00E9;rale de Lausanne, Lausanne, <country>Switzerland</country></aff>
+-<aff id="a2"><label>2</label><institution>Laboratory of Integrative Systems Physiology, Institute of Bioengineering</institution>, Ecole Polytechnique F&#x00E9;d&#x00E9;rale de Lausanne, Lausanne, <country>Switzerland</country></aff>
++<aff id="a1"><label>1</label><institution>Laboratory of Metabolic Signaling, Institute of Bioengineering, Ecole Polytechnique F&#x00E9;d&#x00E9;rale de Lausanne</institution>, Lausanne, <country>Switzerland</country></aff>
++<aff id="a2"><label>2</label><institution>Laboratory of Integrative Systems Physiology, Institute of Bioengineering, Ecole Polytechnique F&#x00E9;d&#x00E9;rale de Lausanne</institution>, Lausanne, <country>Switzerland</country></aff>
+ <aff id="a3"><label>3</label><institution>Center for Integrative Genomics, Universit&#x00E9; de Lausanne</institution>, Lausanne, <country>Switzerland</country></aff>
+ <aff id="a4"><label>4</label><institution>Institute of Metabolic and Cardiovascular Diseases (I2MC), UMR1297, INSERM, University of Toulouse</institution>, Toulouse, <country>France</country></aff>
+ <aff id="a5"><label>5</label><institution>INSERM, Occitanie</institution>, Montpellier, <country>France</country></aff>
