@@ -59,6 +59,7 @@ for file in $1/*; do
     echo "copy all tif content to $outputDir..."
     cp $tmpDir/content/*.tif "$outputDir/" || true
     cp $tmpDir/content/*.gif "$outputDir/" || true
+    cp $tmpDir/content/*.jpg "$outputDir/" || true
 
     # remove the pdf_url approach when we move away from enhanced-preprints-data
     pdf_url="https://github.com/elifesciences/enhanced-preprints-data/raw/master/data/${doi}/$(basename ${doi}).pdf"

@@ -39,6 +39,7 @@ for file in $1/*; do
     echo "copy all tif content to $outputDir..."
     cp $tmpDir/content/*.tif "$outputDir/" || true
     cp $tmpDir/content/*.gif "$outputDir/" || true
+    cp $tmpDir/content/*.jpg "$outputDir/" || true
 
     pdf_s3="s3://elife-epp-data/pdf/${doi}/$(basename ${doi}).pdf"
 
